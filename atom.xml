@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Feed Name</title>
+  <link href="http://domain/"/>
+  <link type="application/atom+xml" rel="self" href="http://domain/atom.xml"/>
+  <updated>2015-04-21T16:19:29.1256685+08:00</updated>
+  <id>http://domain/</id>
+  <author>
+    <name>Author</name>
+    <email>Email</email>
+  </author>
+
+  
+  <entry>
+    <id>http://domain//2015/04/20/myfirstpost.html</id>
+    <link type="text/html" rel="alternate" href="http://domain//2015/04/20/myfirstpost.html"/>
+    <title>My First Blog to use GitHub</title>
+    <updated>2015-04-20T00:00:00+08:00</updated>
+    <author>
+      <name>Author</name>
+      <uri>http://domain/</uri>
+    </author>
+    <content type="html">&lt;h2&gt;About github...&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; is really famous now, not only for &lt;strong&gt;open source&lt;/strong&gt;, but also for &lt;strong&gt;static blogs&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;And this is the first time for me to try to use github to publish my blogs.&lt;/p&gt;
+&lt;p&gt;I have tried some static blog projects such as &lt;a href=&quot;http://hexo.io/docs/&quot;&gt;&lt;strong&gt;hexo&lt;/strong&gt;&lt;/a&gt; (made with node.js), and &lt;a href=&quot;http://gohugo.io/&quot;&gt;&lt;strong&gt;hugo&lt;/strong&gt;&lt;/a&gt; (made with golang), of course the first try is &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;&lt;strong&gt;jekyll&lt;/strong&gt;&lt;/a&gt; (made with Ruby), but at the end I still choose &lt;a href=&quot;https://github.com/Code52/pretzel&quot;&gt;&lt;strong&gt;pretzel&lt;/strong&gt;&lt;/a&gt;(made by C#). The reason why I choose this because I am familiar with C#, and also it has a wonderful IDE.&lt;/p&gt;
+&lt;h2&gt;Usage&lt;/h2&gt;
+&lt;p&gt;The principal commands are the following but more informations are available on the wiki&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Create&lt;/strong&gt; is used to create the folder structure for a new site.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pretzel create
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the site should be at a specific folder, this can be specified as a parameter:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pretzel create C:\path\to\folder
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Bake&lt;/strong&gt; is used to generate a site based on the contents of a folder.&lt;/p&gt;
+&lt;p&gt;To scan the current directory for a website and detect the content to process, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pretzel bake 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To scan a specific folder and parse the contents, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pretzel bake C:\path\to\folder
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To explicitly specify the input - we should support inferring the input based on the files found anyway - run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pretzel bake --engine liquid
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Taste&lt;/strong&gt; is for testing a site locally - make a change, and pretzel should handle regenerating the page when a file changes.&lt;/p&gt;
+&lt;p&gt;To test a site locally, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pretzel taste 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To specify the port to serve the site from (default will be 4000), run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pretzel taste --port 5000
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To stop the site, press q.&lt;/p&gt;
+</content>
+  </entry>
+  
+</feed>
