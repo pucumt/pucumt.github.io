@@ -6,14 +6,14 @@
     <atom:link href="http://domain/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-au</language>
-    <pubDate>Tue, 21 Apr 2015 22:16:47 %z</pubDate>
-    <lastBuildDate>Tue, 21 Apr 2015 22:16:47 %z</lastBuildDate>
+    <pubDate>周三, 22 四月 2015 01:54:15 %z</pubDate>
+    <lastBuildDate>周三, 22 四月 2015 01:54:15 %z</lastBuildDate>
 
     
     <item>
       <title>My First Blog to use GitHub</title>
       <link>http://domain/2015/04/20/myfirstpost.html</link>
-      <pubDate>Mon, 20 Apr 2015 00:00:00 %z</pubDate>
+      <pubDate>周一, 20 四月 2015 00:00:00 %z</pubDate>
       <author>Author</author>
       <guid>http://domain/2015/04/20/myfirstpost.html</guid>
       <description>&lt;h2&gt;About github...&lt;/h2&gt;
