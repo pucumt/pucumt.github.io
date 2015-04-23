@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="en-au" http-equiv="Content-Language" />
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Blog Feed" />
+		<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Blog Feed" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<title>Use LDAP server to authenticate user identity</title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css" />
+		<link rel="shortcut icon" href="/img/favicon.ico" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="side">
+				<div id="hometext"><a href="/" >Weple's Blog</a>
+				</div>
+				<a href="/" id="home" title="home" alt="home"><img src="/img/logo.png" alt="Site Name" /></a>
+				<div class="PersonalTitle">About me</div>
+				<div class="sectionPersonal">
+					<ul>
+						<li>Graduate in 2005 of CUMT</li>
+						<li>Focus on MS domain(.net)</li>
+						<li>Learning new technology(Golang..)</li>
+					</ul>
+				</div>
+				<div class="PersonalTitle">Contact me</div>
+				<div class="sectionPersonal">
+					<ul>
+						<li>Email: <a href=mailto:weple@qq.com>weple@qq.com</a></li>
+					</ul>
+				</div>
+				<div class="section">
+					<ul>
+						<li><a href="/about.html">about</a></li>
+						<li><a href="/rss.xml"><img src="/img/25.png" /> feed</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="content">
+				<div class="entry-container">
+	<div class='entry'>
+		<h1> Use LDAP server to authenticate user identity </h1>
+		<span class="postdate">23 April, 2015
+			
+		</span>
+		<p>In the group company, the employees' account and password are all recorded in LDAP server, and usually there are SSO login needed, or the apps need login with the account exists in LDAP server. About the basic technology of LDAP server, you could search it from internet.  I just wanted to talk about <strong>how to use it to authenticate a user login</strong>. And if your IT is really good at LDAP server and could told you about the LDAP structure, please ignore this article. </p>
+<p>My situation</p>
+<ol>
+<li>I don't know the base DN, and I don't know where to get that.</li>
+<li>I know the LDAP server address and port, and lucky I get one of the LDAP server acccount could be used to search infos.</li>
+</ol>
+<p>The steps to get LDAP structure:</p>
+<ol>
+<li>
+<p>Download a LDAP server management tools(like Softerra LDAP Administrator)
+   By default, it will login some LDAP servers, I am not if this only exists in Softera LdAP Administrator or not.</p>
+</li>
+<li>
+<p>Create a new profile to the LDAP server(notice the port).</p>
+</li>
+</ol>
+<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP1.png?raw=true" /></p>
+<ol>
+<li>Click next and input the account that could search in LDAP server
+Usually the user will be cn=XXX or uid=XXX, that's both OK.</li>
+</ol>
+<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP2.png?raw=true" /></p>
+<ol>
+<li>After input account, the LDAP structure will be displayed. And here is my LDAP structure:</li>
+</ol>
+<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP3.png?raw=true" /></p>
+<p>And now it is easy to code with any computer language to authenticate a user exists or not.</p>
+<p>As for user password authenticate, you can try to find the way by yourself.</p>
+<p>And also a way to check your filter is correct or not:</p>
+<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP4.png?raw=true" /></p>
+
+	</div>
+</div>
+<div id="page-navigation"> 
+	<div class="left">  </div> 
+	<div class="right">  </div> 
+	<div class="clear">&nbsp;</div>
+</div> 
+
+
+
+			</div>
+
+		</div>
+	</body>
+</html>

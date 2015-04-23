@@ -3,13 +3,55 @@
   <title>Feed Name</title>
   <link href="http://domain/"/>
   <link type="application/atom+xml" rel="self" href="http://domain/atom.xml"/>
-  <updated>2015-04-23T17:14:36.1351138+08:00</updated>
+  <updated>2015-04-23T17:39:04.1298986+08:00</updated>
   <id>http://domain/</id>
   <author>
     <name>Author</name>
     <email>Email</email>
   </author>
 
+  
+  <entry>
+    <id>http://domain//2015/04/23/UseLDAPserver.html</id>
+    <link type="text/html" rel="alternate" href="http://domain//2015/04/23/UseLDAPserver.html"/>
+    <title>Use LDAP server to authenticate user identity</title>
+    <updated>2015-04-23T00:00:00+08:00</updated>
+    <author>
+      <name>Author</name>
+      <uri>http://domain/</uri>
+    </author>
+    <content type="html">&lt;p&gt;In the group company, the employees&apos; account and password are all recorded in LDAP server, and usually there are SSO login needed, or the apps need login with the account exists in LDAP server. About the basic technology of LDAP server, you could search it from internet.  I just wanted to talk about &lt;strong&gt;how to use it to authenticate a user login&lt;/strong&gt;. And if your IT is really good at LDAP server and could told you about the LDAP structure, please ignore this article. &lt;/p&gt;
+&lt;p&gt;My situation&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I don&apos;t know the base DN, and I don&apos;t know where to get that.&lt;/li&gt;
+&lt;li&gt;I know the LDAP server address and port, and lucky I get one of the LDAP server acccount could be used to search infos.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The steps to get LDAP structure:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download a LDAP server management tools(like Softerra LDAP Administrator)
+   By default, it will login some LDAP servers, I am not if this only exists in Softera LdAP Administrator or not.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new profile to the LDAP server(notice the port).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP1.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click next and input the account that could search in LDAP server
+Usually the user will be cn=XXX or uid=XXX, that&apos;s both OK.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP2.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;After input account, the LDAP structure will be displayed. And here is my LDAP structure:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP3.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And now it is easy to code with any computer language to authenticate a user exists or not.&lt;/p&gt;
+&lt;p&gt;As for user password authenticate, you can try to find the way by yourself.&lt;/p&gt;
+&lt;p&gt;And also a way to check your filter is correct or not:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP4.png?raw=true&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <id>http://domain//2015/04/22/ThinkAboutCMMIAndAgile.html</id>

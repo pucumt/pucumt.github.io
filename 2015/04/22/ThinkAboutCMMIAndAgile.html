@@ -7,7 +7,7 @@
 		<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Blog Feed" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-		<title>Weple's blog about computer skills and life</title>
+		<title>CMMI还是Agile</title>
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
 		<link rel="shortcut icon" href="/img/favicon.ico" />
 	</head>
@@ -39,66 +39,13 @@
 				</div>
 			</div>
 			<div id="content">
-				<ul class="posts">
-    
-		<li>
-			<div class="idea">
-				
-					<h1><a href="/2015/04/23/UseLDAPserver.html">Use LDAP server to authenticate user identity</a></h1>
-					
-					<div class="postdate">23 April, 2015
-						<ul>
-						
-						</ul>
-					</div>
-					
-					<p>In the group company, the employees' account and password are all recorded in LDAP server, and usually there are SSO login needed, or the apps need login with the account exists in LDAP server. About the basic technology of LDAP server, you could search it from internet.  I just wanted to talk about <strong>how to use it to authenticate a user login</strong>. And if your IT is really good at LDAP server and could told you about the LDAP structure, please ignore this article. </p>
-<p>My situation</p>
-<ol>
-<li>I don't know the base DN, and I don't know where to get that.</li>
-<li>I know the LDAP server address and port, and lucky I get one of the LDAP server acccount could be used to search infos.</li>
-</ol>
-<p>The steps to get LDAP structure:</p>
-<ol>
-<li>
-<p>Download a LDAP server management tools(like Softerra LDAP Administrator)
-   By default, it will login some LDAP servers, I am not if this only exists in Softera LdAP Administrator or not.</p>
-</li>
-<li>
-<p>Create a new profile to the LDAP server(notice the port).</p>
-</li>
-</ol>
-<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP1.png?raw=true" /></p>
-<ol>
-<li>Click next and input the account that could search in LDAP server
-Usually the user will be cn=XXX or uid=XXX, that's both OK.</li>
-</ol>
-<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP2.png?raw=true" /></p>
-<ol>
-<li>After input account, the LDAP structure will be displayed. And here is my LDAP structure:</li>
-</ol>
-<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP3.png?raw=true" /></p>
-<p>And now it is easy to code with any computer language to authenticate a user exists or not.</p>
-<p>As for user password authenticate, you can try to find the way by yourself.</p>
-<p>And also a way to check your filter is correct or not:</p>
-<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP4.png?raw=true" /></p>
-
-					<br />
-					<a href="/2015/04/23/UseLDAPserver.html#disqus_thread">More...</a>
-				
-			</div>
-		</li>
-    
-		<li>
-			<div class="idea">
-				
-					<h2><a class="postlink" href="/2015/04/22/ThinkAboutCMMIAndAgile.html">CMMI还是Agile</a></h2>
-					<div class="postdate">22 April, 2015
-						<ul>
-						
-						</ul>
-					</div>
-					<h2>开篇...</h2>
+				<div class="entry-container">
+	<div class='entry'>
+		<h1> CMMI还是Agile </h1>
+		<span class="postdate">22 April, 2015
+			
+		</span>
+		<h2>开篇...</h2>
 <p>软件项目管理到底用<strong>CMMI</strong>还是<strong>Agile</strong>呢？最近参加的各种活动会议毫无疑问推广的都是Agile，但是，实时上Agile是万能的吗？任何公司或者团队都可以照搬吗？事实证明Agile并不容易实施，失败的案例数不胜数。下面以我自己的观点分别分析一下这两种模式。</p>
 <h2>CMMI...</h2>
 <p>最著名的传统式软件开发莫过于V模型了，下面一张图摘自网络，很好的诠释了V模型的原理：
@@ -128,66 +75,16 @@ Usually the user will be cn=XXX or uid=XXX, that's both OK.</li>
 <p>最近参与了IBM的敏捷活动，发现某些公司完全没有章程的开发才是最大的问题，自上而下完全不懂软件工程，人员能力比较一般，对上埋怨领导想到啥提啥，对下埋怨工作进度质量差。跟自己的工作经历结合，有感而发，有些未必对。</p>
 <p>总之，采取那么开发模式最好对软件工程有一些认知，选用那些软件管理项目，根据自身的成本考虑，没有说收费的就一定比免费的好，所以选择对的才是最重要。而且我比较反对敏捷采用8小时Charge的方式，压力太大。</p>
 
-					
-					<a href="/2015/04/22/ThinkAboutCMMIAndAgile.html#disqus_thread">More...</a>
-				
-			</div>
-		</li>
-    
-		<li>
-			<div class="idea">
-				
-					<h2><a class="postlink" href="/2015/04/20/myfirstpost.html">My First Blog to use GitHub</a></h2>
-					<div class="postdate">20 April, 2015
-						<ul>
-						
-						</ul>
-					</div>
-					<h2>About github...</h2>
-<p><strong>Github</strong> is really famous now, not only for <strong>open source</strong>, but also for <strong>static blogs</strong>.</p>
-<p>And this is the first time for me to try to use github to publish my blogs.</p>
-<p>I have tried some static blog projects such as <a href="http://hexo.io/docs/"><strong>hexo</strong></a> (made with node.js), and <a href="http://gohugo.io/"><strong>hugo</strong></a> (made with golang), of course the first try is <a href="http://jekyllrb.com/"><strong>jekyll</strong></a> (made with Ruby), but at the end I still choose <a href="https://github.com/Code52/pretzel"><strong>pretzel</strong></a>(made by C#). The reason why I choose this because I am familiar with C#, and also it has a wonderful IDE.</p>
-<h2>Usage</h2>
-<p>The principal commands are the following but more informations are available on the wiki</p>
-<p><strong>Create</strong> is used to create the folder structure for a new site.</p>
-<pre><code>pretzel create
-</code></pre>
+	</div>
+</div>
+<div id="page-navigation"> 
+	<div class="left">  </div> 
+	<div class="right">  </div> 
+	<div class="clear">&nbsp;</div>
+</div> 
 
-<p>If the site should be at a specific folder, this can be specified as a parameter:</p>
-<pre><code>pretzel create C:\path\to\folder
-</code></pre>
 
-<p><strong>Bake</strong> is used to generate a site based on the contents of a folder.</p>
-<p>To scan the current directory for a website and detect the content to process, run:</p>
-<pre><code>pretzel bake 
-</code></pre>
 
-<p>To scan a specific folder and parse the contents, run:</p>
-<pre><code>pretzel bake C:\path\to\folder
-</code></pre>
-
-<p>To explicitly specify the input - we should support inferring the input based on the files found anyway - run:</p>
-<pre><code>pretzel bake --engine liquid
-</code></pre>
-
-<p><strong>Taste</strong> is for testing a site locally - make a change, and pretzel should handle regenerating the page when a file changes.</p>
-<p>To test a site locally, run:</p>
-<pre><code>pretzel taste 
-</code></pre>
-
-<p>To specify the port to serve the site from (default will be 4000), run:</p>
-<pre><code>pretzel taste --port 5000
-</code></pre>
-
-<p>To stop the site, press q.</p>
-
-					
-					<a href="/2015/04/20/myfirstpost.html#disqus_thread">More...</a>
-				
-			</div>
-		</li>
-    
-</ul>
 			</div>
 
 		</div>
