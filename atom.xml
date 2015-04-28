@@ -3,13 +3,65 @@
   <title>Feed Name</title>
   <link href="http://domain/"/>
   <link type="application/atom+xml" rel="self" href="http://domain/atom.xml"/>
-  <updated>2015-04-23T17:39:04.1298986+08:00</updated>
+  <updated>2015-04-28T15:24:21.2329501+08:00</updated>
   <id>http://domain/</id>
   <author>
     <name>Author</name>
     <email>Email</email>
   </author>
 
+  
+  <entry>
+    <id>http://domain//2015/04/28/DebugUseMDBG.html</id>
+    <link type="text/html" rel="alternate" href="http://domain//2015/04/28/DebugUseMDBG.html"/>
+    <title>To debug in production with MDBG</title>
+    <updated>2015-04-28T00:00:00+08:00</updated>
+    <author>
+      <name>Author</name>
+      <uri>http://domain/</uri>
+    </author>
+    <content type="html">&lt;p&gt;Even now I still heard some company using remote debug or install VS in production. This is really a very bad behavior. And this is one solution to debug in production.&lt;/p&gt;
+&lt;p&gt;Location: #InstallDir#\Microsoft Visual Studio 8\SDK\v2.0\Bin&lt;/p&gt;
+&lt;p&gt;Steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Copy the full folder to production&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG1.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Mdbg&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG2.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To learn a tool or a new language, the most important things is to learn the help&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG3.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;For now it is very easy to do anything you wanted, and this is an example of using Mdbg.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG4.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Once I click button &amp;quot;button1&amp;quot;, it will throw an exception, let&apos;s see what&apos;s going on in mdbg.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG5.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It told us the exception is in method WinDBGT1.TestException.GetException of line 11.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Now if show lines even with source in the folder, still show the error&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG6.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Again rerun the exe with pdb file(assume you understand the pdb file is symbol file) and command sh&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG7.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Almost done, except the pdb location is changed after move to production. So you can change the pdb location path or change the file path.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG8.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Actually there are a lot of functions in Mdbg, for example to create and read dump, so no need to debug in production, just get the dump to check all issues.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And here is the link of msdn with Mdbg: https://msdn.microsoft.com/en-us/library/ms229861.aspx&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <id>http://domain//2015/04/23/UseLDAPserver.html</id>
