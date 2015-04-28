@@ -56,40 +56,42 @@
 <p>Location: #InstallDir#\Microsoft Visual Studio 8\SDK\v2.0\Bin</p>
 <p>Steps:</p>
 <ol>
-<li>Copy the full folder to production</li>
-</ol>
+<li>
+<p>Copy the full folder to production</p>
 <p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG1.png?raw=true" /></p>
-<ol>
-<li>Open Mdbg</li>
-</ol>
+</li>
+<li>
+<p>Open Mdbg</p>
 <p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG2.png?raw=true" /></p>
-<ol>
-<li>To learn a tool or a new language, the most important things is to learn the help</li>
-</ol>
+</li>
+<li>
+<p>To learn a tool or a new language, the most important things is to learn the help</p>
 <p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG3.png?raw=true" /></p>
-<ol>
-<li>For now it is very easy to do anything you wanted, and this is an example of using Mdbg.</li>
-</ol>
+</li>
+<li>
+<p>For now it is very easy to do anything you wanted, and this is an example of using Mdbg.</p>
 <p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG4.png?raw=true" /></p>
-<ol>
-<li>Once I click button &quot;button1&quot;, it will throw an exception, let's see what's going on in mdbg.</li>
-</ol>
+</li>
+<li>
+<p>Once I click button &quot;button1&quot;, it will throw an exception, let's see what's going on in mdbg.</p>
 <p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG5.png?raw=true" /></p>
 <p>It told us the exception is in method WinDBGT1.TestException.GetException of line 11.</p>
-<ol>
-<li>Now if show lines even with source in the folder, still show the error</li>
-</ol>
+</li>
+<li>
+<p>Now if show lines even with source in the folder, still show the error</p>
 <p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG6.png?raw=true" /></p>
-<ol>
-<li>Again rerun the exe with pdb file(assume you understand the pdb file is symbol file) and command sh</li>
-</ol>
+</li>
+<li>
+<p>Again rerun the exe with pdb file(assume you understand the pdb file is symbol file) and command sh</p>
 <p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG7.png?raw=true" /></p>
-<ol>
-<li>Almost done, except the pdb location is changed after move to production. So you can change the pdb location path or change the file path.</li>
-</ol>
+</li>
+<li>
+<p>Almost done, except the pdb location is changed after move to production. So you can change the pdb location path or change the file path.</p>
 <p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/MDBG8.png?raw=true" /></p>
-<ol>
-<li>Actually there are a lot of functions in Mdbg, for example to create and read dump, so no need to debug in production, just get the dump to check all issues.</li>
+</li>
+<li>
+<p>Actually there are a lot of functions in Mdbg, for example to create and read dump, so no need to debug in production, just get the dump to check all issues.</p>
+</li>
 </ol>
 <p>And here is the link of msdn with Mdbg: https://msdn.microsoft.com/en-us/library/ms229861.aspx</p>
 
@@ -122,18 +124,18 @@
 </li>
 <li>
 <p>Create a new profile to the LDAP server(notice the port).</p>
+<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP1.png?raw=true" /></p>
+</li>
+<li>
+<p>Click next and input the account that could search in LDAP server
+Usually the user will be cn=XXX or uid=XXX, that's both OK.</p>
+<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP2.png?raw=true" /></p>
+</li>
+<li>
+<p>After input account, the LDAP structure will be displayed. And here is my LDAP structure:</p>
+<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP3.png?raw=true" /></p>
 </li>
 </ol>
-<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP1.png?raw=true" /></p>
-<ol>
-<li>Click next and input the account that could search in LDAP server
-Usually the user will be cn=XXX or uid=XXX, that's both OK.</li>
-</ol>
-<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP2.png?raw=true" /></p>
-<ol>
-<li>After input account, the LDAP structure will be displayed. And here is my LDAP structure:</li>
-</ol>
-<p><img src="https://github.com/pucumt/pucumt.github.io/blob/master/Images/LDAP3.png?raw=true" /></p>
 <p>And now it is easy to code with any computer language to authenticate a user exists or not.</p>
 <p>As for user password authenticate, you can try to find the way by yourself.</p>
 <p>And also a way to check your filter is correct or not:</p>
