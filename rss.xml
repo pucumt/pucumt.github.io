@@ -6,9 +6,60 @@
     <atom:link href="http://domain/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-au</language>
-    <pubDate>Tue, 28 Apr 2015 15:46:31 %z</pubDate>
-    <lastBuildDate>Tue, 28 Apr 2015 15:46:31 %z</lastBuildDate>
+    <pubDate>Fri, 12 Jun 2015 13:16:17 %z</pubDate>
+    <lastBuildDate>Fri, 12 Jun 2015 13:16:17 %z</lastBuildDate>
 
+    
+    <item>
+      <title>Analysis the requirements</title>
+      <link>http://domain/2015/06/12/To analysis the requirement.html</link>
+      <pubDate>Fri, 12 Jun 2015 00:00:00 %z</pubDate>
+      <author>Author</author>
+      <guid>http://domain/2015/06/12/To analysis the requirement.html</guid>
+      <description>&lt;p&gt;Now in China it is very hard to hire a developer with some ability. So most of the times you must try to training the YPP by yourself, and there are some skills of my experience.&lt;/p&gt;
+&lt;p&gt;Situations:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Requirement totally not clear:&lt;/strong&gt; There are some logic about the requirement, and the requirement only with some sentence, you don&apos;t know where is the module.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; &lt;strong&gt;Ask&lt;/strong&gt; the requirement owner or your PM, sounds very easy, but most of the YPP don&apos;t like ask questions, and one day later the PM to check the process, you are still reads the requirement and read some codes no relationship with the requirement.   
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Cannot describe requirement clearly:&lt;/strong&gt; Most of the time, you know a little of the requirement, but when you describe the logic to your PM, you cannot say it clearly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Actually you are not clear about the full logic, and you are not familiar with the module, so you can use some &lt;strong&gt;charts/screen shots&lt;/strong&gt; to help you explain the functions maybe in meeting or in your email.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Logic is too complex:&lt;/strong&gt; This is also very normal to the YPP, and usually you may think you understand it, but once implement the function, there are so many situations(branches) about the logic, you don&apos;t know to start.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; This time you could use table or work flow to help you manage the function. &lt;/p&gt;
+&lt;p&gt;If there are many situations but not many steps, use &lt;strong&gt;table&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/Requirement1.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;If there are many steps of the function, use &lt;strong&gt;work flow charts&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/Requirement2.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Actions of PM:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Meetings to &lt;strong&gt;review the requirements&lt;/strong&gt;, everyone must join and show their requirements.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Meetings to &lt;strong&gt;review the process&lt;/strong&gt;, this is very important, only this could help you keep the project go forward.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Training&lt;/strong&gt; of computer skills, this may not that important once have the point 4, but it is still very useful.  
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Point a senior to &lt;strong&gt;help&lt;/strong&gt; a YPP, and tell the YPP to think first before ask questions. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You must have enough &lt;strong&gt;estimate&lt;/strong&gt; to the training time and meeting time.  
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The project is really hard to manage than before now, if you have the same situation with me, maybe this could help your a little, and if you also have some other experiences, you can contact me with my email either.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>To debug in production with MDBG</title>
