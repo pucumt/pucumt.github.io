@@ -6,9 +6,32 @@
     <atom:link href="http://domain/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-au</language>
-    <pubDate>Fri, 12 Jun 2015 13:16:17 %z</pubDate>
-    <lastBuildDate>Fri, 12 Jun 2015 13:16:17 %z</lastBuildDate>
+    <pubDate>Mon, 29 Jun 2015 15:11:59 %z</pubDate>
+    <lastBuildDate>Mon, 29 Jun 2015 15:11:59 %z</lastBuildDate>
 
+    
+    <item>
+      <title>Network monitor</title>
+      <link>http://domain/2015/06/29/Network monitor.html</link>
+      <pubDate>Mon, 29 Jun 2015 00:00:00 %z</pubDate>
+      <author>Author</author>
+      <guid>http://domain/2015/06/29/Network monitor.html</guid>
+      <description>&lt;p&gt;There are many tool to catch the internet data, I usually use Fiddler, and most of the time it is enough, but sometimes need use network monitor or wireshark. But after a times of no use, I need google again the way to use it. And now I am going to remember the way to use network monitor. &lt;/p&gt;
+&lt;p&gt;Steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Select the network that you want to capture.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/network1.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the filter that you want to check&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/network2.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I believe the most useful skill is about filter to find the data that you really want.&lt;/p&gt;
+&lt;p&gt;And soon may add some screen shots about wireshark.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Analysis the requirements</title>

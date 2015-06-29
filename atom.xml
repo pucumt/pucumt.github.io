@@ -3,13 +3,39 @@
   <title>Feed Name</title>
   <link href="http://domain/"/>
   <link type="application/atom+xml" rel="self" href="http://domain/atom.xml"/>
-  <updated>2015-06-12T13:16:17.7572369+08:00</updated>
+  <updated>2015-06-29T15:11:59.635093+08:00</updated>
   <id>http://domain/</id>
   <author>
     <name>Author</name>
     <email>Email</email>
   </author>
 
+  
+  <entry>
+    <id>http://domain//2015/06/29/Network monitor.html</id>
+    <link type="text/html" rel="alternate" href="http://domain//2015/06/29/Network monitor.html"/>
+    <title>Network monitor</title>
+    <updated>2015-06-29T00:00:00+08:00</updated>
+    <author>
+      <name>Author</name>
+      <uri>http://domain/</uri>
+    </author>
+    <content type="html">&lt;p&gt;There are many tool to catch the internet data, I usually use Fiddler, and most of the time it is enough, but sometimes need use network monitor or wireshark. But after a times of no use, I need google again the way to use it. And now I am going to remember the way to use network monitor. &lt;/p&gt;
+&lt;p&gt;Steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Select the network that you want to capture.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/network1.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the filter that you want to check&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/pucumt/pucumt.github.io/blob/master/Images/network2.png?raw=true&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I believe the most useful skill is about filter to find the data that you really want.&lt;/p&gt;
+&lt;p&gt;And soon may add some screen shots about wireshark.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <id>http://domain//2015/06/12/To analysis the requirement.html</id>
